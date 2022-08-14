@@ -1,40 +1,88 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+  <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>DRY Principle</h1>
+        <p>Why it is really important</p>
+        <p style="font-size: 0.8em">how to understand & implement it in a proper way</p>
+      </section>
+      <section>
+        <section><img alt="" src="./assets/bart-meme1.png"></section>
+        <section><img alt="" src="./assets/bart-meme2.png"></section>
+      </section>
+      <section>
+        <section>
+          <img alt="" src="./assets/pragmatic-programmer.jpg">
+        </section>
+        <section>
+          <img alt="" src="./assets/pragmatic-authors.jpg">
+          <p>Dave Thomas&nbsp &nbsp &nbsp &nbsp &nbsp Andy Hunt</p>
+        </section>
+        <section>
+          <p>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system</p>
+        </section>
+      </section>
+      <section>
+        <section><img alt="" src="./assets/Снимок экрана от 2022-08-14 14-57-22.png"></section>
+        <section>
+          <img alt="" src="./assets/Снимок экрана от 2022-08-14 15-20-20.png" height="300">
+          <p><i> - "Many people took it [the DRY principle] to refer to code only: they thought that DRY means “don’t
+              copy-and-paste lines of source.” […] DRY is about the duplication of knowledge, of intent. It’s about
+              expressing the same thing in two different places, possibly in two totally different ways."</i></p>
+        </section>
+      </section>
+      <section>
+        <section><img alt="" src="./assets/software_quality-dry_vs_wet_code.png"></section>
+        <section><img alt="" src="./assets/Снимок экрана от 2022-08-14 16-05-25.png"></section>
+      </section>
+      <section>
+        <ul>
+          <li>don't elevate the DRY principle to an absolute</li>
+          <br>
+          <li>it is important to have a good balance between generalizing your intentions and repeating lines of code,
+            because both can create unnecessary complexity </li>
+          <br>
+          <li>DRY is essential and time-saving skill for any coder</li>
+        </ul>
+      </section>
+      <section>
+        <p>Thank you for your attention</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
 </html>
